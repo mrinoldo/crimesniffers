@@ -9,31 +9,34 @@ echo 'Current PHP version: ' . phpversion();
         ?>
 
         <?php
-            $host = "mysql-crimesniffers.cnurcb2fxz0x.us-east-2.rds.amazonaws.com";
-            $username = "admin";
-            $pwd = "crimesniffers123";
-            $db_name="crimesniffers";
+
+            $mysqli = new mysqli("database", "admin", "12dlql*41");
+            echo $mysqli->server_info ;
+            // $host = "mysql-crimesniffers.cnurcb2fxz0x.us-east-2.rds.amazonaws.com";
+            // $username = "admin";
+            // $pwd = "crimesniffers123";
+            // $db_name="crimesniffers";
         
         
 
             
-            // $conn = mysqli_connect("$host", "$username", "$pwd");
-            $conn = mysql_connect("$host", "$username", "$pwd");
+            // // $conn = mysqli_connect("$host", "$username", "$pwd");
+            // $conn = mysql_connect("$host", "$username", "$pwd");
 
-            /*
-            mysql_select_db("$db_name");
-            */
+            // /*
+            // mysql_select_db("$db_name");
+            // */
             
-            /*
-            if (!$conn) {
-                    die("Cannot connect to server");
-            } else {
-                    mysql_select_db("$db_name");
-                    echo "connection established";
-            }
-            */
+            // /*
+            // if (!$conn) {
+            //         die("Cannot connect to server");
+            // } else {
+            //         mysql_select_db("$db_name");
+            //         echo "connection established";
+            // }
+            // */
 
-            mysql_select_db("$db_name");
+            // mysql_select_db("$db_name");
             // mysqli_select_db($conn, $db_name);
 
             
